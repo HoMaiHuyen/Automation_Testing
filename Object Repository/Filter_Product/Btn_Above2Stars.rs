@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_List</name>
+   <name>Btn_Above2Stars</name>
    <tag></tag>
-   <elementGuidId>b0f900b1-3dfe-4d04-b4f6-bba12de97e47</elementGuidId>
+   <elementGuidId>c8474877-3adf-4353-8522-b79d64f9acb4</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//ul[@id='products']//div[contains(@class, 'product') and .//span[contains(text(), 'Giảm')]]</value>
+         <value>//a[normalize-space()='Trên 2 sao']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

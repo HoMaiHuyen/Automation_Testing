@@ -27,20 +27,20 @@ WebUI.navigateToUrl('http://127.0.0.1:5500/')
 
 
 // Bước 2: Click vào nút số lượng sao
-WebUI.click(findTestObject('Object Repository/Filter_Price/btn_Price'))
+WebUI.click(findTestObject('Object Repository/Filter_Product/btn_Price'))
 
 
 
 // Bước 3: Chọn bộ lọc "Trên 2 Sao"
-WebUI.click(findTestObject('Object Repository/Filter_Price/btn_Under2Million'))
+WebUI.click(findTestObject('Object Repository/Filter_Product/btn_Under2Million'))
 
-TestObject lastProductElement = findTestObject('Object Repository/Filter_Price/div_List')
+TestObject lastProductElement = findTestObject('Object Repository/Filter_Product/div_ListProduct')
 WebUI.scrollToElement(lastProductElement, 10)
 // Bước 4: Đợi cho các sản phẩm hiển thị
-WebUI.waitForElementVisible(findTestObject('Object Repository/Filter_Price/btn_Under2MillionClear'), 10)
+WebUI.waitForElementVisible(findTestObject('Object Repository/Filter_Product/btn_Under2MillionClear'), 10)
 
 // Bước 5: Kiểm tra xem có sản phẩm nào trên 2 sao không
-def productList = WebUI.findWebElements(findTestObject('Object Repository/Filter_Price/btn_Under2MillionClear'), 10)
+def productList = WebUI.findWebElements(findTestObject('Object Repository/Filter_Product/btn_Under2MillionClear'), 10)
 
 if (productList.size() > 0) {
 	WebUI.comment('Có sản phẩm hiển thị trên 2 sao.')
@@ -49,8 +49,8 @@ if (productList.size() > 0) {
 }
 
 // Bước 6: Kiểm tra sự hiện diện của nút "Xóa bộ lọc" và "Trên 2 sao"
-boolean clearFilterVisible = WebUI.verifyElementVisible(findTestObject('Object Repository/Filter_Price/btn_ClearFilter'))
-boolean above2StarsVisible = WebUI.verifyElementVisible(findTestObject('Object Repository/Filter_Price/btn_Under2MillionClear'))
+boolean clearFilterVisible = WebUI.verifyElementVisible(findTestObject('Object Repository/Filter_Product/btn_ClearFilter'))
+boolean above2StarsVisible = WebUI.verifyElementVisible(findTestObject('Object Repository/Filter_Product/btn_Under2MillionClear'))
 
 if (clearFilterVisible && above2StarsVisible) {
 	WebUI.comment('Cả hai nút "Xóa bộ lọc" và "Trên 2 sao" đều hiển thị.')

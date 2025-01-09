@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btn_Promotion</name>
+   <name>div_ListProduct</name>
    <tag></tag>
-   <elementGuidId>87f9135c-96ba-4756-94e4-fd97d5d27b27</elementGuidId>
+   <elementGuidId>9fce90a8-c4d0-459b-a4aa-02e22316ce00</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[contains(text(),'Khuyến mãi')]</value>
+         <value>//div[@class='contain-products']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

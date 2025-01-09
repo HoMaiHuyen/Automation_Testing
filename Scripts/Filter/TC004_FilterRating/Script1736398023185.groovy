@@ -26,17 +26,17 @@ WebUI.navigateToUrl('http://127.0.0.1:5500/')
 
 
 
-WebUI.click(findTestObject('Object Repository/Filter_Rating/Btn_Rating'))
+WebUI.click(findTestObject('Object Repository/Filter_Product/Btn_Rating'))
 
-WebUI.click(findTestObject('Object Repository/Filter_Rating/Btn_Above2Stars'))
+WebUI.click(findTestObject('Object Repository/Filter_Product/Btn_Above2Stars'))
 
-TestObject lastProductElement = findTestObject('Object Repository/Filter_Rating/div_List')
+TestObject lastProductElement = findTestObject('null')
 WebUI.scrollToElement(lastProductElement, 10)
 // Bước 4: Đợi cho các sản phẩm hiển thị
-WebUI.waitForElementVisible(findTestObject('Object Repository/Filter_Rating/Btn_Above2StarsClear'), 10)
+WebUI.waitForElementVisible(findTestObject('Object Repository/Filter_Product/Btn_Above2StarsClear'), 10)
 
 // Bước 5: Kiểm tra xem có sản phẩm nào trên 2 sao không
-def productList = WebUI.findWebElements(findTestObject('Object Repository/Filter_Rating/Btn_Above2StarsClear'), 10)
+def productList = WebUI.findWebElements(findTestObject('Object Repository/Filter_Product/Btn_Above2StarsClear'), 10)
 
 if (productList.size() > 0) {
 	WebUI.comment('Có sản phẩm hiển thị trên 2 sao.')
@@ -45,8 +45,8 @@ if (productList.size() > 0) {
 }
 
 // Bước 6: Kiểm tra sự hiện diện của nút "Xóa bộ lọc" và "Trên 2 sao"
-boolean clearFilterVisible = WebUI.verifyElementVisible(findTestObject('Object Repository/Filter_Rating/Btn_ClearFilter'))
-boolean above2StarsVisible = WebUI.verifyElementVisible(findTestObject('Object Repository/Filter_Rating/Btn_Above2StarsClear'))
+boolean clearFilterVisible = WebUI.verifyElementVisible(findTestObject('null'))
+boolean above2StarsVisible = WebUI.verifyElementVisible(findTestObject('Object Repository/Filter_Product/Btn_Above2StarsClear'))
 
 if (clearFilterVisible && above2StarsVisible) {
 	WebUI.comment('Cả hai nút "Xóa bộ lọc" và "Trên 2 sao" đều hiển thị.')

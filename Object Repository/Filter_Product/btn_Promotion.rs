@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Btn_ClearFilter</name>
+   <name>btn_Promotion</name>
    <tag></tag>
-   <elementGuidId>134c9a3f-daf4-4b57-96e6-f1fe1b84a346</elementGuidId>
+   <elementGuidId>bb08fa0a-ef08-40a2-88a7-7246cfa31bab</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//h3[contains(text(),'Xóa bộ lọc')]</value>
+         <value>//button[contains(text(),'Khuyến mãi')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

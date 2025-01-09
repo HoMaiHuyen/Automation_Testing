@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btn_DiscountClear</name>
+   <name>btn_Discount</name>
    <tag></tag>
-   <elementGuidId>cf9884d5-2651-4b77-b67e-2a2706fed81f</elementGuidId>
+   <elementGuidId>d0101a69-e1a4-4f28-876b-ce5e2f0ca136</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//h3[contains(text(),'Giảm giá')]</value>
+         <value>//a[contains(text(),'Giảm giá')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
