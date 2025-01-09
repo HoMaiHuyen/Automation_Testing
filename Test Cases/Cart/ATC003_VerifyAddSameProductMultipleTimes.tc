@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ATC003_VerifyAddSameProductMultipleTimes</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>861e5e8b-c3fd-4337-bb42-100bc33922c7</testCaseGuid>
+</TestCaseEntity>

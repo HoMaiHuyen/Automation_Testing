@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ATC002_VerifyGuestProductAddition</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0add7935-090d-418e-a054-7d3710178ca6</testCaseGuid>
+</TestCaseEntity>
