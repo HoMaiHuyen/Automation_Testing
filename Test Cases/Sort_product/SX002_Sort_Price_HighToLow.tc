@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SX002_Sort_Price_HighToLow</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>02ca12b3-dee6-4637-980a-d931ae421f6f</testCaseGuid>
+</TestCaseEntity>
