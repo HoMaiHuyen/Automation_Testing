@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ATC005_VerifyAddToCartFromProductDetail</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>689b4e3b-340d-452c-9c71-bbb37b651e8e</testCaseGuid>
+</TestCaseEntity>
