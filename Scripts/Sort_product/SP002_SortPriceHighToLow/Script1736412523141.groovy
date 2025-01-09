@@ -22,13 +22,10 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import org.openqa.selenium.WebElement // Import lớp WebElement
-import java.util.List // Import lớp List nếu cần
+import org.openqa.selenium.WebElement
+import java.util.List
 
-// Open the browser
 WebUI.openBrowser('')
-
-// Navigate to the homepage
 WebUI.navigateToUrl('http://127.0.0.1:5500/')
 
 // Check the sort menu and select "Price: Low to High"
@@ -50,7 +47,7 @@ products.each { product ->
 }
 
 // Compare the price list with ascending order
-def sortedPrices = prices.sort() // Sort the price list
-assert prices == sortedPrices // Check if the original list is already sorted from low to high
+def sortedPrices = prices.sort()
+assert prices == sortedPrices 
 
 

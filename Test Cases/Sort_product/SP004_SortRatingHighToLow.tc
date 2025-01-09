@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>SX004_Sort_Rating_HighToLow</name>
+   <name>SP004_SortRatingHighToLow</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>

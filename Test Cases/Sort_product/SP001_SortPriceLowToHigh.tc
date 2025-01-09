@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>SX001_Sort_Price_LowToHigh</name>
+   <name>SP001_SortPriceLowToHigh</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>

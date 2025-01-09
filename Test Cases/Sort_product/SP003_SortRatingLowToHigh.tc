@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TK001_Search_By_Name</name>
+   <name>SP003_SortRatingLowToHigh</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>e8f3e892-8918-44f6-86ca-5e67623dfcf5</testCaseGuid>
+   <testCaseGuid>e7aa1c42-27f0-4bfe-8431-3a2c2e34797b</testCaseGuid>
 </TestCaseEntity>

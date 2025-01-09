@@ -20,19 +20,18 @@ import org.openqa.selenium.Keys as Keys
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
-// Step 1: Open browser and navigate to the home page
 WebUI.openBrowser('')
-WebUI.navigateToUrl('http://127.0.0.1:5500/') // Replace with the actual URL
+WebUI.navigateToUrl('http://127.0.0.1:5500/')
 
 
-// Step 3: Select a product from the list
-WebUI.click(findTestObject('Object Repository/Product_detail/div_product_item')) // Replace with the specific product object
+//Select a product from the list
+WebUI.click(findTestObject('Object Repository/Product_detail/div_product_item'))
 
-// Step 4: Verify the product detail page is displayed
+//Verify the product detail page is displayed
 boolean isDetailPageDisplayed = WebUI.verifyElementVisible(findTestObject('Object Repository/Product_detail/div_product_detail_page'))
 assert isDetailPageDisplayed : "Product detail page is not displayed"
 
-// Step 5: Verify product details are displayed correctly
+//Verify product details are displayed correctly
 boolean isProductNameDisplayed = WebUI.verifyElementVisible(findTestObject('Object Repository/Product_detail/txt_product_name'))
 assert isProductNameDisplayed : "Product name is not displayed"
 
@@ -45,8 +44,8 @@ assert isProductPriceDisplayed : "Product price is not displayed"
 boolean isAddToCartButtonDisplayed = WebUI.verifyElementVisible(findTestObject('Object Repository/Product_detail/btn_add_to_cart'))
 assert isAddToCartButtonDisplayed : "Add to Cart button is not displayed"
 
-// Step 6: Print success message to the console
+//Print success message to the console
 println("Test Case VP-001: Verify user can view product details successfully - PASSED")
 
-// Step 7: Close browser
+//Close browser
 WebUI.closeBrowser()

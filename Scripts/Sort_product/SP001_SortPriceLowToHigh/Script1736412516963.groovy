@@ -3,14 +3,11 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import org.openqa.selenium.WebElement // Import the WebElement class
-import com.kms.katalon.core.testobject.TestObject // Import TestObject
-import java.util.List // Import the List class if needed
+import org.openqa.selenium.WebElement
+import com.kms.katalon.core.testobject.TestObject
+import java.util.List 
 
-// Open the browser
 WebUI.openBrowser('')
-
-// Navigate to the homepage
 WebUI.navigateToUrl('http://127.0.0.1:5500/')
 
 // Check the sort menu and select "Price: Low to High"
@@ -50,7 +47,5 @@ if (prices == sortedPrices) {
     assert false : "The price list is not in ascending order."
 }
 
-// Wait a few seconds to check the interface before closing the browser
 WebUI.delay(5)
-// Close the browser after the check
 WebUI.closeBrowser()

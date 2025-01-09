@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>VP001_View_Product_Detail</name>
+   <name>SP002_SortPriceHighToLow</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>bb237704-c132-4957-bd04-d189c0d661e9</testCaseGuid>
+   <testCaseGuid>02ca12b3-dee6-4637-980a-d931ae421f6f</testCaseGuid>
 </TestCaseEntity>
