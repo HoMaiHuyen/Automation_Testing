@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC004_FilterRating</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f06122ad-63e0-4c6e-87e2-fa8035bb08d5</testCaseGuid>
+</TestCaseEntity>

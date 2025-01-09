@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC001_FilterCategoryIphone</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5f21cc86-e484-4681-9c3e-7fe2a00eed88</testCaseGuid>
+</TestCaseEntity>
