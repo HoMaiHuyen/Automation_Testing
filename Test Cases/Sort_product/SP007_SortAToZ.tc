@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SP007_SortAToZ</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d8bb6aef-8e0a-4b00-8b1d-660d2f2fa1e2</testCaseGuid>
+</TestCaseEntity>

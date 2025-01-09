@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SP008_SortZToA</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>264b6341-b7c5-40a1-a5b6-b73c248223e7</testCaseGuid>
+</TestCaseEntity>
