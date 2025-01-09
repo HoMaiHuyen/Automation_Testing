@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement
 import com.kms.katalon.core.testobject.TestObject
 
 WebUI.openBrowser('')
-WebUI.navigateToUrl('http://127.0.0.1:5500/')
+WebUI.navigateToUrl('http://127.0.0.1:5500/DoAn_Web1/')
 
 //Enter the search keyword into the search box
 WebUI.setText(findTestObject('Object Repository/Search_product/input_search_box'), 'iPhone 7')

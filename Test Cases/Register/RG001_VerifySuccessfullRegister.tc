@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RG001_VerifySuccessfullRegister</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>836bb8cc-fe7d-497b-a64b-46fc46f2c897</testCaseGuid>
+</TestCaseEntity>
