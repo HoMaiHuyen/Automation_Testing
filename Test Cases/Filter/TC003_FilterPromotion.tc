@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC003_FilterPromotion</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>bb41a036-2519-48d2-a0ef-49841e3ed698</testCaseGuid>
+</TestCaseEntity>
