@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SP001_SortPriceLowToHigh</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3347d7dc-f8a8-4cee-987b-119ea3fb0829</testCaseGuid>
+</TestCaseEntity>
