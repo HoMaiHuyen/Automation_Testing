@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ATC004_VerifyDifferentProductsAdded</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a52c94ed-0475-40cc-a786-16a4c3389da0</testCaseGuid>
+</TestCaseEntity>

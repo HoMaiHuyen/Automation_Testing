@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>LGU_001_VerifySuccessfulLogin</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>baa67656-31eb-4f3b-9cbc-4c5954983d28</testCaseGuid>
+</TestCaseEntity>
