@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SP006_SortReviewHighToLow</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b3d2032b-cf23-410d-92ae-e8c607db2476</testCaseGuid>
+</TestCaseEntity>

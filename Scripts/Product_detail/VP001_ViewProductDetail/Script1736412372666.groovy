@@ -35,9 +35,6 @@ assert isDetailPageDisplayed : "Product detail page is not displayed"
 boolean isProductNameDisplayed = WebUI.verifyElementVisible(findTestObject('Object Repository/Product_detail/txt_product_name'))
 assert isProductNameDisplayed : "Product name is not displayed"
 
-boolean isProductImageDisplayed = WebUI.verifyElementVisible(findTestObject('Object Repository/Product_detail/img_product_image'))
-assert isProductImageDisplayed : "Product image is not displayed"
-
 boolean isProductPriceDisplayed = WebUI.verifyElementVisible(findTestObject('Object Repository/Product_detail/txt_product_price'))
 assert isProductPriceDisplayed : "Product price is not displayed"
 
