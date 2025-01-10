@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC007_FilterByPriceRangeAndBrand</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>49e3935e-375c-4818-a2d9-b7a10f91f0d5</testCaseGuid>
+</TestCaseEntity>

@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[contains(text(),'Giá tiền')]</value>
+         <value>//button[contains(text(),'Giá tiền')] </value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

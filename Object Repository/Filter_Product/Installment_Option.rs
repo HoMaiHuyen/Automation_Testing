@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btn_Promotion</name>
+   <name>Installment_Option</name>
    <tag></tag>
-   <elementGuidId>bb08fa0a-ef08-40a2-88a7-7246cfa31bab</elementGuidId>
+   <elementGuidId>86966bab-588d-4839-8e65-b9a7aec5ef92</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[contains(text(),'Khuyến mãi')] </value>
+         <value>//a[contains(text(),'Trả góp')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC006_FilterByNewAndPrice</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>902738c2-d529-4fc3-a2d6-5c0b6ad518f0</testCaseGuid>
+</TestCaseEntity>
