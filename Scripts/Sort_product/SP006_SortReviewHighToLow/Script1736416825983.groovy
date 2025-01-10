@@ -34,7 +34,7 @@ for (WebElement product : products) {
 // Verify that the list of review scores is sorted in descending order
 boolean isSorted = true
 for (int i = 0; i < reviewScores.size() - 1; i++) {
-    if (reviewScores.get(i) < reviewScores.get(i + 1)) { // Đảo ngược dấu để kiểm tra giảm dần
+    if (reviewScores.get(i) < reviewScores.get(i + 1)) {
         isSorted = false
         break
     }

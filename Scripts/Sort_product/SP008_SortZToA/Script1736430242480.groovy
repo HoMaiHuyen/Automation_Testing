@@ -26,7 +26,7 @@ for (WebElement productElement : productElements) {
 // Verify that the product names are in reverse alphabetical order (Z to A)
 boolean isSorted = true
 for (int i = 0; i < productNames.size() - 1; i++) {
-    if (productNames.get(i).compareToIgnoreCase(productNames.get(i + 1)) < 0) { // Compare strings in reverse order
+    if (productNames.get(i).compareToIgnoreCase(productNames.get(i + 1)) < 0) { 
         isSorted = false
         break
     }

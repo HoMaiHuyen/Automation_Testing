@@ -20,10 +20,10 @@ List<Double> reviewScores = new ArrayList<>()
 
 // Extract review scores from the page
 for (WebElement product : products) {
-    String reviewText = product.getText().trim(); // Example: "2 đánh giá"
+    String reviewText = product.getText().trim();
     
     // Extract numeric part using regex
-    String numericPart = reviewText.replaceAll("[^0-9.]", ""); // Remove non-numeric characters except '.'
+    String numericPart = reviewText.replaceAll("[^0-9.]", "");
     
     // Safely parse to Double if numericPart is not empty
     if (!numericPart.isEmpty()) {

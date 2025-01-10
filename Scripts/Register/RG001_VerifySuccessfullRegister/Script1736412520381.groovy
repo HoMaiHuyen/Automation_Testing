@@ -18,7 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
-WebUI.navigateToUrl('http://127.0.0.1:5500/DoAn_Web1/')
+WebUI.navigateToUrl('http://127.0.0.1:5500/')
 WebUI.click(findTestObject('Object Repository/Register_Page/btn_Account'))
 WebUI.click(findTestObject('Object Repository/Register_Page/btn_Register'))
 WebUI.setText(findTestObject('Object Repository/Register_Page/txt_Lastname'), 'Nguyen')

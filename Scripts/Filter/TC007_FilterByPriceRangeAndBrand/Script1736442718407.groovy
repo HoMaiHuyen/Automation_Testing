@@ -21,39 +21,39 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.By
 
-// Mở trình duyệt và điều hướng đến trang web
+// Open the browser and navigate to the website
 WebUI.openBrowser('http://127.0.0.1:5500/')
 WebUI.maximizeWindow()
 
-// Nhấp vào nút "Giá tiền"
+// Click on the "Price" button
 WebUI.click(findTestObject('Object Repository/Filter_Product/btn_price'))
 
-// Chọn giá "Từ 2 - 4 triệu"
+// Select the price range "2 - 4 million"
 WebUI.click(findTestObject('Object Repository/Filter_Product/btn_2-4milion'))
 
-// Nhấp vào nút "Khuyến mãi"
+// Click on the "Promotion" button
 WebUI.click(findTestObject('Object Repository/Filter_Product/btn_promotion'))
 
-// Chọn "Mới ra mắt"
+// Select "New Arrivals"
 WebUI.click(findTestObject('Object Repository/Filter_Product/btn_newArrivals'))
 
-// Xác minh các sản phẩm trong kết quả hiển thị đúng theo tiêu chí lọc
+// Verify that the products in the results meet the filter criteria
 List<WebElement> productResults = WebUI.findWebElements(findTestObject('Object Repository/Filter_Product/list_Products'), 10)
 
 for (WebElement product : productResults) {
-	// Lấy giá sản phẩm
+	// Get the product price
 	String priceText = product.findElement(By.xpath('//li[1]//a[1]//div[1]//strong[1]')).getText()
-	int price = Integer.parseInt(priceText.replaceAll('[^\\d]', '')) // Loại bỏ ký tự không phải số
+	int price = Integer.parseInt(priceText.replaceAll('[^\\d]', ''))
 	
-	// Lấy thông tin khuyến mãi
+	// Get the promotion information
 	String promotionText = product.findElement(By.xpath('//li[1]//a[1]//label[1]')).getText()
 	
-	// Kiểm tra giá trong phạm vi 2 - 4 triệu
+	// Verify the price is within the range of 2 - 4 million
 	WebUI.verifyGreaterThanOrEqual(price, 2000000)
 	WebUI.verifyLessThanOrEqual(price, 4000000)
 	
-	// Kiểm tra khuyến mãi "Mới ra mắt"
+	// Verify the promotion matches "New Arrivals"
 	WebUI.verifyMatch(promotionText, 'Mới ra mắt', false)
 }
-// Đóng trình duyệt sau khi hoàn thành
+// Close the browser after completing the test
 WebUI.closeBrowser()

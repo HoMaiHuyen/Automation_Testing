@@ -17,23 +17,23 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-// Bước 1: Mở trình duyệt và truy cập vào trang HomePage
+// Step 1: Open the browser and navigate to the HomePage
 WebUI.openBrowser('')
 WebUI.navigateToUrl('http://127.0.0.1:5500/')
 
-// Bước 2: Click vào nút lọc danh mục iPhone
+// Step 2: Click on the filter button for the iPhone category
 WebUI.click(findTestObject('Object Repository/Filter_Product/Btn_CategoryIPhone'))
 
-// Bước 3: Đợi cho các sản phẩm hiển thị
+// Step 3: Wait for the products to be displayed
 WebUI.waitForElementVisible(findTestObject('Object Repository/Filter_Product/div_ListProduct'), 10)
 
-// Bước 4: Lấy danh sách các sản phẩm hiển thị
+// Step 4: Get the list of displayed products
 def productList = WebUI.findWebElements(findTestObject('Object Repository/Filter_Product/div_ListProduct'), 10)
 
-// Bước 5: Kiểm tra xem tất cả các sản phẩm có chứa từ "iPhone" không
+// Step 5: Check if all displayed products contain the word "iPhone"
 boolean allProductsAreIphones = true
 for (def product : productList) {
-    // Lấy text từ phần tử WebElement
+    // Get the text from the WebElement
     String productName = product.getText()
     if (!productName.toLowerCase().contains('iphone')) {
         allProductsAreIphones = false
@@ -42,12 +42,12 @@ for (def product : productList) {
 }
 
 if (allProductsAreIphones) {
-    WebUI.comment('Tất cả các sản phẩm hiển thị là iPhone.')
+    WebUI.comment('All displayed products are iPhones.')
 } else {
-    WebUI.comment('Có sản phẩm không phải là iPhone trong danh sách hiển thị.')
+    WebUI.comment('There are products in the list that are not iPhones.')
 }
 
-// Bước 6: Kiểm tra sự hiện diện của nút "Xóa bộ lọc" và "Trên 2 sao"
+// Step 6: Check the visibility of the "Clear Filter" and "Above 2 stars" buttons
 boolean clearFilterVisible = WebUI.verifyElementVisible(findTestObject('Object Repository/Filter_Product/btn_ClearFilter'))
 
 

@@ -8,7 +8,7 @@ import com.kms.katalon.core.testobject.TestObject
 import java.util.List 
 
 WebUI.openBrowser('')
-WebUI.navigateToUrl('http://127.0.0.1:5500/DoAn_Web1/')
+WebUI.navigateToUrl('http://127.0.0.1:5500/')
 
 // Check the sort menu and select "Price: Low to High"
 WebUI.click(findTestObject('Object Repository/Sort_product/ddl_Sort'))

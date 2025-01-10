@@ -6,7 +6,7 @@ import java.util.List
 
 // Step 1: Open the page
 WebUI.openBrowser('')
-WebUI.navigateToUrl('http://127.0.0.1:5500/') // Thay URL bằng URL thực tế của bạn
+WebUI.navigateToUrl('http://127.0.0.1:5500/')
 
 // Step 2: Click the "Sort" button
 WebUI.click(findTestObject('Object Repository/Sort_product/ddl_Sort'))
