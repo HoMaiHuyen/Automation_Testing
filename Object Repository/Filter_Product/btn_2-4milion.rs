@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btn_Promotion</name>
+   <name>btn_2-4milion</name>
    <tag></tag>
-   <elementGuidId>bb08fa0a-ef08-40a2-88a7-7246cfa31bab</elementGuidId>
+   <elementGuidId>e43b82c7-7899-4c61-b1d8-87325403c06d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[contains(text(),'Khuyến mãi')] </value>
+         <value>//a[contains(text(),'Từ 2 - 4 triệu')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

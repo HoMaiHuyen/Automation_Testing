@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC005_FilterByInstallmentAndPrice</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2411d3c7-e44b-418f-b7aa-02f906705b70</testCaseGuid>
+</TestCaseEntity>
