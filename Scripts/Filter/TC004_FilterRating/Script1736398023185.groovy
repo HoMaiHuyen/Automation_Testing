@@ -16,44 +16,41 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
-// Bước 1: Mở trình duyệt và truy cập vào trang HomePage
+// Step 1: Open the browser and navigate to the HomePage
 WebUI.openBrowser('')
 WebUI.navigateToUrl('http://127.0.0.1:5500/')
-
-
 
 WebUI.click(findTestObject('Object Repository/Filter_Product/Btn_Rating'))
 
 WebUI.click(findTestObject('Object Repository/Filter_Product/Btn_Above2Stars'))
 
-TestObject lastProductElement = findTestObject('null')
+TestObject lastProductElement = findTestObject('Object Repository/Filter_Product/div_ListProduct')
 WebUI.scrollToElement(lastProductElement, 10)
-// Bước 4: Đợi cho các sản phẩm hiển thị
+
+// Step 4: Wait for the products to be displayed
 WebUI.waitForElementVisible(findTestObject('Object Repository/Filter_Product/Btn_Above2StarsClear'), 10)
 
-// Bước 5: Kiểm tra xem có sản phẩm nào trên 2 sao không
+// Step 5: Check if there are any products above 2 stars
 def productList = WebUI.findWebElements(findTestObject('Object Repository/Filter_Product/Btn_Above2StarsClear'), 10)
 
 if (productList.size() > 0) {
-	WebUI.comment('Có sản phẩm hiển thị trên 2 sao.')
+	WebUI.comment('There are products displayed above 2 stars.')
 } else {
-	WebUI.comment('Không có sản phẩm nào hiển thị trên 2 sao.')
+	WebUI.comment('No products are displayed above 2 stars.')
 }
 
-// Bước 6: Kiểm tra sự hiện diện của nút "Xóa bộ lọc" và "Trên 2 sao"
-boolean clearFilterVisible = WebUI.verifyElementVisible(findTestObject('null'))
+// Step 6: Check the visibility of the "Clear Filter" and "Above 2 Stars" buttons
+boolean clearFilterVisible = WebUI.verifyElementVisible(findTestObject('Object Repository/Filter_Product/btn_ClearFilter'))
 boolean above2StarsVisible = WebUI.verifyElementVisible(findTestObject('Object Repository/Filter_Product/Btn_Above2StarsClear'))
 
 if (clearFilterVisible && above2StarsVisible) {
-	WebUI.comment('Cả hai nút "Xóa bộ lọc" và "Trên 2 sao" đều hiển thị.')
+	WebUI.comment('Both "Clear Filter" and "Above 2 Stars" buttons are visible.')
 } else {
-	WebUI.comment('Có vấn đề với việc hiển thị nút lọc.')
+	WebUI.comment('There is an issue with the visibility of filter buttons.')
 }
 
-// Bước 7: Đóng trình duyệt
-
-WebUI.comment('Trình duyệt đã đóng.')
+// Step 7: Close the browser
+WebUI.comment('The browser has been closed.')

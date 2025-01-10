@@ -21,8 +21,8 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
-WebUI.openBrowser('') // Mở trình duyệt
-WebUI.navigateToUrl('http://127.0.0.1:5500/') // Điều hướng tới ứng dụng
+WebUI.openBrowser('')
+WebUI.navigateToUrl('http://127.0.0.1:5500/')
 // Call Test Case for login
 WebUI.callTestCase(findTestCase('Login/LGU_001_VerifySuccessfulLogin'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -40,7 +40,7 @@ WebUI.delay(2)
 WebUI.click(findTestObject('Object Repository/Cart_page/btn_plus'))
 
 // Add a delay to ensure the cart updates
-WebUI.delay(2) // Wait 2 seconds
+WebUI.delay(2)
 
 // Verify the product quantity has increased
 WebUI.verifyElementText(findTestObject('Object Repository/Cart_page/txt_numberCart'), '2')
@@ -49,7 +49,7 @@ WebUI.verifyElementText(findTestObject('Object Repository/Cart_page/txt_numberCa
 WebUI.click(findTestObject('Object Repository/Cart_page/btn_minus'))
 
 // Add a delay to ensure the cart updates
-WebUI.delay(2) // Wait 2 seconds
+WebUI.delay(2)
 
 // Verify the product quantity has decreased
 WebUI.verifyElementText(findTestObject('Object Repository/Cart_page/txt_numberCart'), '1')

@@ -22,7 +22,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 // Open browser and navigate to the website
 WebUI.openBrowser('')
-WebUI.navigateToUrl('http://127.0.0.1:5500/DoAn_Web1/')
+WebUI.navigateToUrl('http://127.0.0.1:5500/')
 
 
 // Select the product "Vivo Y71" and try to add it to the cart

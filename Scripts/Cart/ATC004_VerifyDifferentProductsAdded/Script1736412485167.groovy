@@ -31,7 +31,7 @@ WebUI.waitForPageLoad(5)
 WebUI.click(findTestObject('Object Repository/Cart_page/btn_cart'))
 
 // Verify the presence of both products in the cart
-WebUI.verifyTextPresent('Nokia black future', false)
+WebUI.verifyTextPresent('Xiaomi Redmi Note 5', false)
 WebUI.verifyTextPresent('Huawei Nova 2i', false)
 
 // Close the browser

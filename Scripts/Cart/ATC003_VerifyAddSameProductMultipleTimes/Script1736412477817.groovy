@@ -39,7 +39,7 @@ WebUI.verifyEqual(cartQuantity, '3')
 WebUI.click(findTestObject('Object Repository/Cart_page/btn_cart'))
 
 // Verify the product name in the cart
-String cartProductName = WebUI.getText(findTestObject('Object Repository/Cart_page/txt_ProductNameInCart'))
+String cartProductName = WebUI.getText(findTestObject('Object Repository/Cart_page/txt_productNameInCart'))
 WebUI.verifyEqual(cartProductName, productName)
 
 // Close the browser

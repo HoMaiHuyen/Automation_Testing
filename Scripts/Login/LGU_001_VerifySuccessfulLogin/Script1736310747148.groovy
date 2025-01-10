@@ -20,7 +20,7 @@ import groovy.json.JsonSlurper
 
 // Open browser and navigate to the application
 WebUI.openBrowser('')
-WebUI.navigateToUrl('http://127.0.0.1:5500/DoAn_Web1/')
+WebUI.navigateToUrl('http://127.0.0.1:5500/')
 
 // Retrieve user info from Local Storage before login
 String storedUserInfo = WebUI.executeJavaScript("return window.localStorage.getItem('ListUser')", null)
