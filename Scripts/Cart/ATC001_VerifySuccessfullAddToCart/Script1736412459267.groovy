@@ -23,8 +23,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 WebUI.openBrowser('')
 WebUI.navigateToUrl('http://127.0.0.1:5500/')
+
 // Call Test Case for login
 WebUI.callTestCase(findTestCase('Login/LGU_001_VerifySuccessfulLogin'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.delay(5)
 
 // Add a product to the cart
 WebUI.click(findTestObject('Object Repository/Cart_page/btn_add'))

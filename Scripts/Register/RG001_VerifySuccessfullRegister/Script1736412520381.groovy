@@ -17,8 +17,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
-WebUI.navigateToUrl('http://127.0.0.1:5500/')
+WebUI.openBrowser('http://127.0.0.1:5500/')
+WebUI.maximizeWindow()
 WebUI.click(findTestObject('Object Repository/Register_Page/btn_Account'))
 WebUI.click(findTestObject('Object Repository/Register_Page/btn_Register'))
 WebUI.setText(findTestObject('Object Repository/Register_Page/txt_Lastname'), 'Nguyen')
@@ -29,4 +29,3 @@ WebUI.setEncryptedText(findTestObject('Object Repository/Register_Page/txt_Passw
 WebUI.click(findTestObject('Object Repository/Register_Page/btn_Continue'))
 WebUI.acceptAlert()
 WebUI.verifyElementText(findTestObject('Object Repository/Register_Page/lbl_Account'), 'Nguyen Van A')
-WebUI.closeBrowser()

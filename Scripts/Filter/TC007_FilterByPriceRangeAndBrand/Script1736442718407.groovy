@@ -55,5 +55,3 @@ for (WebElement product : productResults) {
 	// Verify the promotion matches "New Arrivals"
 	WebUI.verifyMatch(promotionText, 'Mới ra mắt', false)
 }
-// Close the browser after completing the test
-WebUI.closeBrowser()

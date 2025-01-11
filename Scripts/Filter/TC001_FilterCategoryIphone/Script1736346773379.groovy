@@ -18,8 +18,8 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 // Step 1: Open the browser and navigate to the HomePage
-WebUI.openBrowser('')
-WebUI.navigateToUrl('http://127.0.0.1:5500/')
+WebUI.openBrowser('http://127.0.0.1:5500/')
+WebUI.maximizeWindow()
 
 // Step 2: Click on the filter button for the iPhone category
 WebUI.click(findTestObject('Object Repository/Filter_Product/Btn_CategoryIPhone'))

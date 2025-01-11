@@ -21,10 +21,11 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 // Step 1: Open the browser and navigate to the HomePage
-WebUI.openBrowser('')
-WebUI.navigateToUrl('http://127.0.0.1:5500/')
-
+WebUI.openBrowser('http://127.0.0.1:5500/')
+WebUI.maximizeWindow()
+WebUI.delay(5)
 // Step 2: Click on the star rating button
+
 WebUI.click(findTestObject('Object Repository/Filter_Product/btn_Price'))
 
 // Step 3: Select the "Above 2 Stars" filter
@@ -55,5 +56,6 @@ if (clearFilterVisible && above2StarsVisible) {
 	WebUI.comment('There is an issue with the filter button visibility.')
 }
 
-// Step 7: Close the browser
-WebUI.comment('The browser has been closed.')
+WebUI.delay(5)
+WebUI.closeBrowser()
+

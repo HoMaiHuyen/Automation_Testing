@@ -55,5 +55,3 @@ for (WebElement product : productResults) {
 	// Verify the promotion is "Newly Launched"
 	WebUI.verifyMatch(promotionText, 'Trả góp 0%', false, FailureHandling.CONTINUE_ON_FAILURE)
 }
-// Close the browser after completing the test
-WebUI.closeBrowser()
