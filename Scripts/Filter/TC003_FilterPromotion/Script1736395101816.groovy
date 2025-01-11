@@ -18,8 +18,8 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 // Step 1: Open the browser and navigate to the HomePage
-WebUI.openBrowser('')
-WebUI.navigateToUrl('http://127.0.0.1:5500/')
+WebUI.openBrowser('http://127.0.0.1:5500/')
+WebUI.maximizeWindow()
 
 // Delay to observe the page
 WebUI.delay(3)
@@ -52,5 +52,3 @@ if (clearFilterVisible && discountClearVisible) {
 	WebUI.comment('There is an issue with the visibility of filter buttons.')
 }
 
-// Step 7: Close the browser
-WebUI.closeBrowser()

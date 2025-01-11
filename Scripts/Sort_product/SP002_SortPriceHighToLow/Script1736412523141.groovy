@@ -25,8 +25,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import org.openqa.selenium.WebElement
 import java.util.List
 
-WebUI.openBrowser('')
-WebUI.navigateToUrl('http://127.0.0.1:5500/')
+WebUI.openBrowser('http://127.0.0.1:5500/')
+WebUI.maximizeWindow()
 
 // Check the sort menu and select "Price: Low to High"
 WebUI.click(findTestObject('Object Repository/Sort_product/ddl_Sort'))

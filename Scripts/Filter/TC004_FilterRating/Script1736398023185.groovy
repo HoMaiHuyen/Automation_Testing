@@ -20,8 +20,8 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 // Step 1: Open the browser and navigate to the HomePage
-WebUI.openBrowser('')
-WebUI.navigateToUrl('http://127.0.0.1:5500/')
+WebUI.openBrowser('http://127.0.0.1:5500/')
+WebUI.maximizeWindow()
 
 WebUI.click(findTestObject('Object Repository/Filter_Product/Btn_Rating'))
 
@@ -51,6 +51,3 @@ if (clearFilterVisible && above2StarsVisible) {
 } else {
 	WebUI.comment('There is an issue with the visibility of filter buttons.')
 }
-
-// Step 7: Close the browser
-WebUI.comment('The browser has been closed.')

@@ -7,8 +7,8 @@ import org.openqa.selenium.WebElement
 import com.kms.katalon.core.testobject.TestObject
 import java.util.List 
 
-WebUI.openBrowser('')
-WebUI.navigateToUrl('http://127.0.0.1:5500/')
+WebUI.openBrowser('http://127.0.0.1:5500/')
+WebUI.maximizeWindow()
 
 // Step 3: Select "Reviews: High to Low" from the dropdown list
 WebUI.click(findTestObject('Object Repository/Sort_product/ddl_Sort'))

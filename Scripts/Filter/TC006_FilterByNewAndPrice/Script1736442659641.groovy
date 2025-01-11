@@ -52,5 +52,3 @@ for (WebElement product : productResults) {
 	// Verify the promotion matches "Oppo F9"
 	WebUI.verifyMatch(promotionText, 'Oppo F9', false, FailureHandling.CONTINUE_ON_FAILURE)
 }
-// Close the browser after completing the test
-WebUI.closeBrowser()

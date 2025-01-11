@@ -19,9 +19,8 @@ import org.openqa.selenium.Keys as Keys
 import groovy.json.JsonSlurper
 
 // Open browser and navigate to the application
-WebUI.openBrowser('')
-WebUI.navigateToUrl('http://127.0.0.1:5500/')
-
+WebUI.openBrowser('http://127.0.0.1:5500/')
+WebUI.maximizeWindow()
 // Retrieve user info from Local Storage before login
 String storedUserInfo = WebUI.executeJavaScript("return window.localStorage.getItem('ListUser')", null)
 if (storedUserInfo != null && !storedUserInfo.isEmpty()) {

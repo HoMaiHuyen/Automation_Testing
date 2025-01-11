@@ -21,12 +21,13 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 // Open browser and navigate to the website
-WebUI.openBrowser('')
-WebUI.navigateToUrl('http://127.0.0.1:5500/')
+WebUI.openBrowser('http://127.0.0.1:5500/')
+WebUI.maximizeWindow()
 
 
 // Select the product "Vivo Y71" and try to add it to the cart
 WebUI.click(findTestObject('Object Repository/Cart_page/btn_add'))
+WebUI.delay(5)
 
 // Verify that the alert message "Bạn cần đăng nhập để mua hàng !" is displayed
 String alertText = WebUI.getAlertText()
@@ -34,9 +35,9 @@ WebUI.verifyMatch(alertText, 'Bạn cần đăng nhập để mua hàng !', fals
 
 // Accept the alert (click "OK")
 WebUI.acceptAlert()
+WebUI.delay(5)
 
 // Verify the login page title is "Chào mừng bạn trở lại!"
 WebUI.verifyElementText(findTestObject('Object Repository/Cart_page/lbl_login'), 'Chào mừng bạn trở lại!')
 
-// Close the browser after the test
-WebUI.closeBrowser()
+

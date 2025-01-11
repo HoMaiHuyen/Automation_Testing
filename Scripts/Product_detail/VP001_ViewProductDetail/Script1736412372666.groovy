@@ -20,8 +20,8 @@ import org.openqa.selenium.Keys as Keys
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
-WebUI.openBrowser('')
-WebUI.navigateToUrl('http://127.0.0.1:5500/')
+WebUI.openBrowser('http://127.0.0.1:5500/')
+WebUI.maximizeWindow()
 
 
 //Select a product from the list
@@ -44,5 +44,3 @@ assert isAddToCartButtonDisplayed : "Add to Cart button is not displayed"
 //Print success message to the console
 println("Test Case VP-001: Verify user can view product details successfully - PASSED")
 
-//Close browser
-WebUI.closeBrowser()
